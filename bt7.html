@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="addContact()">add</button>
+    <button onclick="displayContact()">display</button>
+</body>
+<script>
+    let phoneBooks = [];
+    let addContact = () =>{
+        let name = prompt("nhap ten");
+        let phone = prompt("nhap sdt");
+        let email = prompt("nhap email");
+        let newContact = {
+            name:name,
+            phone:phone,
+            email:email,
+        }
+        phoneBooks.push(newContact);
+    }
+    let displayContact = () => {
+        console.log(phoneBooks);
+    }
+</script>
+</html>

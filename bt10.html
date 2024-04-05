@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project List</title>
+    <link rel="stylesheet" type="text/css" href="bt10.css" />
+  </head>
+  <body>
+    <div class="input">
+      <input
+        class="display"
+        type="text"
+        placeholder="tên"
+        id="project_name"
+      />
+      <input
+        class="display"
+        type="text"
+        placeholder="giới tính"
+        id="img_url"
+        required
+      />
+      <input
+        class="display"
+        type="date"
+        placeholder="link"
+        id="link"
+        required
+      />
+      <input
+        class="display"
+        type="text"
+        placeholder="địa chỉ"
+        id="tag"
+        required
+      />
+      <button
+        style="background-color: lightblue; width: 100px; height: 50px"
+        class="display"
+        id="newProject"
+      >
+        thêm
+      </button>
+    </div>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search..." />
+    </div>
+
+    <table id="projectTable">
+      <tr>
+        <th>Project Name</th>
+        <th>Image URL</th>
+        <th>Link</th>
+        <th>Tags</th>
+        <th>Action</th>
+      </tr>
+    </table>
+    <script src="bt10.js"></script>
+  </body>
+</html>
